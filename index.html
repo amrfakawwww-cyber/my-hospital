@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>مستشفى الأمل التخصصي</title>
+  <link href="https://fonts.googleapis.com/cssloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.c">
+</head>
+<body>
+
+
+  <div class="emergency">🚑 الطوارئ 24 ساعة: 123 — الاستقبال: 0100 000 0000</div>
+
+  <header class="header">
+    <div class="container navbar">
+      <div class="logo">🏥 مستشفى الأمل التخصصي</div>
+
+      <ul class="menu" id="menu">
+        <li><a href="#about">من نحن</a></li>
+        <li><a href="#depts">الأقسام</a></li>
+        <li><a href="#doctors">الأطباء</a></li>
+        <li><a href="#reviews">آراء المرضى</a></li>
+        <li><a href="#faq">أسئلة شائعة</a></li>
+        <li><a href="#book">حجز</a></li>
+        <li><a href="#contact">تواصل</a></li>
+      </ul>
+
+      <div class="nav-buttons">
+        <button class="icon-btn" id="themeBtn">🌓</button>
+        <button class="icon-btn" id="menuBtn">☰</button>
+      </div>
+    </div>
+  </header>
+
+
+  <section class="hero">
+    <div class="container">
+      <h1>رعاية طبية متخصصة بأعلى معايير الجودة</h1>
+      <p>فريق من أمهر الاستشاريين وأحدث الأجهزة لخدمتك وخدمة أسرتك على مدار 24 ساعة.</p>
+      <a class="btn" href="#book">احجز موعدك الآن</a>
+      <a class="btn btn-outline" href="#doctors">تعرّف على أطبائنا</a>
+    </div>
+  </section>
+
+
+  <section id="about">
+    <div class="container about">
+      <div>
+        <h2 class="title-right">من نحن</h2>
+        <p class="muted">مستشفى الأمل التخصصي تأسس منذ أكثر من 25 عامًا بهدف تقديم رعاية طبية متكاملة تجمع بين الخبرة والتكنولوجيا والإنسانية.</p>
+        <ul class="check-list">
+          <li>أجهزة تشخيص حديثة</li>
+          <li>غرف عمليات معقمة بالكامل</li>
+          <li>عناية مركزة وحضّانات</li>
+          <li>تأمين صحي مع أغلب الشركات</li>
+        </ul>
+      </div>
+      <div class="about-pic">🏥</div>
+    </div>
+  </section>
+
+
+  <section class="alt">
+    <div class="container grid">
+      <div class="card"><div class="number" data-number="25">0</div>سنة خبرة</div>
+      <div class="card"><div class="number" data-number="40">0</div>طبيب استشاري</div>
+      <div class="card"><div class="number" data-number="120">0</div>سرير</div>
+      <div class="card"><div class="number" data-number="12000">0</div>مريض سنويًا</div>
+    </div>
+  </section>
+
+
+  <section id="depts">
+    <div class="container">
+      <h2>أقسامنا التخصصية</h2>
+      <p class="subtitle">اضغط على القسم لحجز موعد فيه</p>
+      <div class="grid" id="deptList"></div>
+    </div>
+  </section>
+
+
+  <section id="doctors" class="alt">
+    <div class="container">
+      <h2>أطباؤنا</h2>
+      <p class="subtitle">ابحث أو صفّي حسب القسم</p>
+      <input id="search" class="search" placeholder="🔍 ابحث باسم الطبيب...">
+      <div class="tabs" id="tabs"></div>
+      <div class="grid" id="docList"></div>
+    </div>
+  </section>
+
+
+  <section id="reviews">
+    <div class="container">
+      <h2>آراء المرضى</h2>
+      <div class="grid" id="revList"></div>
+    </div>
+  </section>
+
+
+  <section id="faq" class="alt">
+    <div class="container">
+      <h2>أسئلة شائعة</h2>
+      <div id="faqList"></div>
+    </div>
+  </section>
+
+
+  <section id="book">
+    <div class="container">
+      <h2>احجز موعدًا</h2>
+      <p class="subtitle">سنتواصل معك لتأكيد الموعد</p>
+
+      <form id="bookForm" class="form">
+        <input id="name" placeholder="الاسم بالكامل" required>
+        <input id="phone" type="tel" placeholder="رقم الهاتف" required>
+        <select id="dept"></select>
+        <select id="doc"><option value="">أي طبيب متاح</option></select>
+        <input id="date" type="date" required>
+        <select id="time">
+          <option value="">اختر الوقت</option>
+          <option>10:00 ص</option>
+          <option>12:00 م</option>
+          <option>4:00 م</option>
+          <option>6:00 م</option>
+        </select>
+        <button class="submit-btn" type="submit">تأكيد الحجز</button>
+        <div class="msg" id="bookMsg"></div>
+      </form>
+    </div>
+  </section>
+
+
+  <section id="contact" class="alt">
+    <div class="container">
+      <h2>تواصل معنا</h2>
+      <div class="contact">
+        <div class="card info">
+          <h3>📍 العنوان</h3><p>شارع الصحة، المدينة</p>
+          <h3>📞 الهاتف</h3><p>0100 000 0000</p>
+          <h3>✉️ البريد</h3><p>info@alamal-hospital.com</p>
+          <h3>🕒 المواعيد</h3><p>العيادات: 10 ص – 10 م<br>الطوارئ: 24 ساعة</p>
+        </div>
+
+        <form id="contactForm" class="form">
+          <input id="cName" placeholder="اسمك" required>
+          <input id="cEmail" type="email" placeholder="بريدك الإلكتروني" required>
+          <textarea id="cMsg" rows="4" placeholder="رسالتك" required></textarea>
+          <button class="submit-btn" type="submit">إرسال</button>
+          <div class="msg" id="contactMsg"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">© 2026 مستشفى الأمل التخصصي — جميع الحقوق محفوظة</footer>
+
+  <button id="topBtn" class="top-btn">↑</button>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/15.2.0/math.js"
+    integrity="sha512-KH9TdlfQlqMVsumZjEuH4piOxtoeBFC3ZQsp4sVNjYK30lwzLJcOWDa+L7Yg8VXIZ6WRynKML/fDCbZUi8gq3Q==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+  </script>
+  <script src="data2.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
